@@ -1,0 +1,106 @@
+RewriteEngine On
+
+RewriteRule ^home private/home.php
+
+RewriteRule ^start public/main.php
+
+RewriteRule ^selectioner-une-annee private/page-annee.php
+
+RewriteRule ^selectionner-trimestre private/page-trimestre.php
+
+RewriteRule ^premier-trimestre private/page-mois1.php
+
+RewriteRule ^deuxieme-trimestre private/page-mois2.php
+
+RewriteRule ^troisieme-trimestre private/page-mois3.php
+
+RewriteRule ^quatrieme-trimestre private/page-mois4.php
+
+RewriteRule ^selectionner-une-semaine private/semaine.php
+
+RewriteRule ^selectionner-le-jours private/jours.php
+
+RewriteRule ^cotations private/cotation-actuel.php
+
+RewriteRule ^update private/cotation.php
+
+RewriteRule ^enregistrement-employer private/employer.php
+
+RewriteRule ^mission private/description.php
+
+RewriteRule ^insersion-des-taches private/tache.php
+
+RewriteRule ^insersion-des-responsabilites private/responsabilite.php
+
+RewriteRule ^add-data private/data.php
+
+RewriteRule ^add-user private/user.php
+
+RewriteRule ^insertionn-des-missions private/mission.php
+
+RewriteRule ^login private/login.php
+
+RewriteRule ^les-etapes-de-la-statistique private/home-statistique.php
+
+RewriteRule ^statistique-du-jour private/home-lelo.php
+
+RewriteRule ^voila-la-statistique-du-jour-de-l-employer private/lelo.php
+
+RewriteRule ^imprimer private/print1.php
+
+RewriteRule ^modifier-les-informations private/employer-modifier.php
+
+RewriteRule ^suppression private/delete.php
+
+RewriteRule ^delete private/supprimer-respo.php
+
+RewriteRule ^print-mission private/print-mission.php
+
+RewriteRule ^selectionner-mois private/page-mois.php
+
+RewriteRule ^selectionner-annee private/page-annee-mois.php
+
+RewriteRule ^statistique-du-mois private/stat-mois.php
+
+RewriteRule ^selectionner-employer private/home-tache.php
+
+RewriteRule ^admin private/home-cotation.php
+
+RewriteRule ^dashbord private/dashbord.php
+
+RewriteRule ^rapport private/rapport.php
+
+RewriteRule ^fichier-du-mois private/print-mois.php
+
+RewriteRule ^deconnexion private/out.php
+
+RewriteRule ^login private/login.php
+
+RewriteRule ^choix-annee private/page-semaine-annee.php
+
+RewriteRule ^choix-mois private/page-semaine-mois.php
+
+RewriteRule ^choix-semaine private/page-semaine-semaine.php
+
+RewriteRule ^stat-semestriel private/stat-semaine.php
+
+RewriteRule ^semaine-employer private/home-statistique-semaine.php
+
+RewriteRule ^resultat-semaine private/print-semaine.php
+
+RewriteRule ^affichage-jd private/job-description.php
+
+RewriteRule ^jd-annee private/jd-annee.php
+
+RewriteRule ^affichage-jd private/jod-description.php
+
+RewriteRule ^privilege private/privilege.php
+
+RewriteRule ^droit-access private/acess.php
+
+RewriteRule ^responsability private/responsability.php
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ private/404.php [L]
